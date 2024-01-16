@@ -5,42 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+
+    <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
-    <header style="background-color:darkseagreen; font-family:monospace">
-        <div style="text-align:center"> <h1>Beeb central</h1> </div>
-        <div style="text-align:center"> <p> hello welcome to my wbeebsite</p></div>
+    <header>
+        <h1>Beeb Central</h1>
+        <p style="margin-top:-20px"> hello welcome to my wbeebsite</p>
     </header>
-    <!-- In this website, I will store my memes. See the memes below-->
-    <section style="background-color:antiquewhite; font-family:monospace">
-        <p></p>
-        <aside style="float:right; padding:30px; margin-left:50px">
+
+    <div class="navbar">
+        <a href="https://www.beebsbackpack.com">Home</a>
+        <!-- <a href="#news">News</a> -->
+        <div class="dropdown">
+          <button class="dropbtn">Dropdown
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="https://www.beebsbackpack.com/gym_schedule.html">Laura's Gym Schedule</a>
+            <a href="https://www.beebsbackpack.com/dnd_tools.html">DND  Tools</a>
+          </div>
+        </div>
+      </div>
+    
+    <h2 style="color:white"> Space-filling Memes</h2>
+    <p id="deslg"></p>
+    <p id="dessm"></p>
+    <section>
+        <aside style="float:right; margin: 50px; margin-top: 5px">
             <iframe width="291" height="163" src="https://www.youtube.com/embed/sFv97ICWP0A"
             title="Hi Venomous" frameborder="0" allow="accelerometer;
             autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
             web-share" allowfullscreen></iframe>
         </aside>
-        <h2> Da memes</h2>
         <h3> Meme #1</h3>
-        <p> >> what's its name? </p>
-        <p> >> it looks it's 'veeno-moose'</p>
-        <p> >> oh well hi veno-moose 🥺</p><br>
+        <div id="content">
+            <p> >> what's its name? </p>
+            <p> >> it looks it's 'veeno-moose'</p>
+            <p> >> oh well hi veno-moose 🥺</p><br>
+        </div>
     </section>
-    <section style="background-color:antiquewhite; font-family:monospace">
+    <section>
         <h3> Meme #2</h3>
-
-        <p> Protons have mass?</p>
-        <p> <i> I didn't even know they were <b>Catholic</b></i></p><br>
+        <div id="homecontent">
+            <p> Protons have mass?</p>
+            <p> <i> I didn't even know they were <b>Catholic</b></i></p><br>
+        </div>
     </section>
-    <section style="background-color: darkseagreen; text-align:center; font-size:large">
-        <h2> It's time for the announcement</h2>
-        <img src="timefortheannouncement.png" alt="It's time for the announcement" width="50%">
+
+    <p id="dessm"></p>
+    <p id="deslg"></p>
+    <section id="gsect">
+        <h2 style="color:white"> It's time for the announcement</h2>
+        <img src="images/timefortheannouncement.png" alt="It's time for the announcement" width="50%"
+                style="margin:-20px">
     
-        <p><a href="https://www.beebsbackpack.com/gym_schedule.html">the announcement</a></p><br>
+        <p><a href="https://www.beebsbackpack.com/gym_schedule.html" style="color:white">the announcement</a></p>
     </section>
     <!--there are different style options: 'background-color:; font-family:;
         color:; font-size:; text-align:;'-->
-    <section style ="text-align:center; font-family:monospace">
+    <section style="text-align:center">
         <p><i>Music for your Enjoyment</i></p>
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6wSe6UrgCYTLk2IT6niHw7?utm_source=generator&theme=0" 
             width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media;
