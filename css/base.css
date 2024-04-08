@@ -1,4 +1,4 @@
-/* This css file contains ass the base formatting for beebsbackpack.com*/
+/* This css file contains the base formatting for beebsbackpack.com/index*/
 
 /* Body font style */
 body {
@@ -92,10 +92,6 @@ h1, h2 {
     text-indent: 2%
 }
 
-h3 {
-    text-indent: 2%
-}
-
 /* green-section id selector */
 #gsect {
     background-color: #333;
@@ -136,14 +132,34 @@ section {
 /* formatting for gym-schedule page */
 /*gym content text format */
 #gymcontent {
-    line-height:5px;
-    white-space: nowrap;
-    margin-right: 5px;
-    padding:1px
+    word-wrap: normal;
+    line-height:1em;
+    padding:1px;
+    padding-left: 2.5em;
+    text-indent: -2em;
 }
 
 #nogymday {
     color:red;
 }
 
+/*decorates buttons */
 
+.button {
+  background-color:cornflowerblue;
+  height:25px;
+  transition-duration:0.3s;
+}
+.button:hover {
+  background-color:#4d5d78;
+}
+
+.game {
+  height:70px;
+  width:70px;
+  transition-duration:.9s,1s;
+  display:inline-block;
+}
+.game:hover {
+  background-color:gray;
+}

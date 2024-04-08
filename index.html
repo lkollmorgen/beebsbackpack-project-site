@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.2/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.3.2/core.js"></script>
 
     <link rel="stylesheet" href="css/base.css">
 </head>
@@ -18,16 +20,17 @@
         <a href="https://www.beebsbackpack.com">Home</a>
         <!-- <a href="#news">News</a> -->
         <div class="dropdown">
-          <button class="dropbtn">Dropdown
+          <button class="dropbtn"> Directory
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
             <a href="https://www.beebsbackpack.com/gym_schedule.html">Laura's Gym Schedule</a>
-            <a href="https://www.beebsbackpack.com/dnd_tools.html">DND  Tools</a>
+            <a href="https://www.beebsbackpack.com/chemistry_tools.html">Chemistry</a>
+            <a href="https://www.beebsbackpack.com/what.html">what</a>
           </div>
         </div>
       </div>
-    
+
     <h2 style="color:white"> Space-filling Memes</h2>
     <p id="deslg"></p>
     <p id="dessm"></p>
@@ -38,12 +41,6 @@
             autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
             web-share" allowfullscreen></iframe>
         </aside>
-        <h3> Meme #1</h3>
-        <div id="content">
-            <p> >> what's its name? </p>
-            <p> >> it looks it's 'veeno-moose'</p>
-            <p> >> oh well hi veno-moose 🥺</p><br>
-        </div>
     </section>
     <section>
         <h3> Meme #2</h3>
@@ -51,8 +48,11 @@
             <p> Protons have mass?</p>
             <p> <i> I didn't even know they were <b>Catholic</b></i></p><br>
         </div>
-    </section>
 
+    <div id="output"></div>
+    <script type="py" src="./py/hello.py" config="./pyscript.json"></script>
+
+    </section>
     <p id="dessm"></p>
     <p id="deslg"></p>
     <section id="gsect">

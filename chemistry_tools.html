@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry Tools</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.2/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.3.2/core.js"></script>
+
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+
+    <p id="deslg"></p>
+    <p id="dessm"></p>
+
+<div>
+    <header>
+    <h1>Binary Ionic Compound Predictor</h1>
+    </header>
+    <div id="ion_title">Will generate an ion from an input cation and anion (doesn't work 🤯)</div>
+    <input type="text" name="atom1" id="atom1" placeholder="Cation here" />
+    <input type="text" name="atom2" id="atom2" placeholder="Anion here" />
+
+    <button class='button' py-click="combine_atoms">Combine atoms</button>
+    <div id="atom_output"></div>
+    <script type="py" src="./py/ions.py" config="./pyscript.json"></script>
+
+</div>
+<div>
+    <header>
+    <h1>Quiz/Test Corrections</h1>
+    </header>
+    <div id="quiz_title">Will calculate a final score after quiz/test corrections (50% back)</div>
+    <input type="text" name="total" id="total" placeholder="Total Score Here" />
+    <input type="text" name="points" id="points" placeholder="Points Scored Here" />
+
+    <button class='button'py-click="display_calculation">Calculate corrected score</button>
+    <div id="button_deco"></div>
+    <div id="message_output"></div>
+    <div id="calc_output"></div>
+    <script type="py" src="./py/quiz_corr.py" config="./pyscript.json"></script>
+</div>
+
+<p id="dessm"></p>
+<p id="deslg"></p>
+
+<footer style="padding-bottom:.1px">
+    <p><a href="https://www.beebsbackpack.com" style="color:white">back</a></p>
+    <p> Copyright &copy;laura March 2024</p>
+    </footer>
+</body>
+</html>
